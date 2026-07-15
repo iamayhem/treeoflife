@@ -1,0 +1,487 @@
+:root {
+  --nanaac1: #8DD8C4;
+  --nanabg: #080A09;
+  --nanabg2: #101312;
+  --nanabr: #28453E;
+  --nanatxt: #E9EEEC;
+  --nanatxt2: #8A9491;
+}
+
+.nana-wishlist{
+  width: 750px;
+  height: auto;
+  background: var(--nanabg);
+  border: 1px solid var(--nanabr);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nana-side{
+  width: 62px;
+  min-height: 1600px;
+  background: var(--nanaac1);
+  color: var(--nanabg);
+  position: relative;
+
+}
+
+.nana-code{
+  position: absolute;
+  top: 25px;
+  left: 24px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.nana-star{
+  position: absolute;
+  bottom: 24px;
+  left: 19px;
+  font-size: 28px;
+  line-height: 25px;
+}
+
+.nana-content{
+  width: 688px;
+  height: auto;
+  background: var(--nanabg);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nana-header{
+  width: 688px;
+  height: 290px;
+  border-bottom: 1px solid var(--nanabr);
+  display: flex;
+  flex-direction: row;
+}
+
+.nana-photo{
+  width: 235px;
+  height: 290px;
+  border-right: 1px solid var(--nanabr);
+  position: relative;
+}
+
+.nana-photo img{
+  width: 235px;
+  height: 290px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  filter: grayscale(100%) brightness(0.6) contrast(1.1);
+}
+
+.nana-photo:after{
+  content: "";
+  width: 235px;
+  height: 290px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(8, 10, 9, 0.6)
+  );
+}
+
+.nana-headerdata{
+  width: 453px;
+  height: 290px;
+  padding: 38px 32px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nana-top{
+  color: var(--nanaac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 10px;
+  letter-spacing: 2px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nana-top i{
+  height: 1px;
+  background: var(--nanabr);
+  flex: 1;
+}
+
+.nana-top b{
+  font-size: 7px;
+  line-height: 7px;
+  letter-spacing: 2px;
+}
+
+.nana-title{
+  color: var(--nanaac1);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 95px;
+  line-height: 82px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+}
+
+.nana-japanese{
+  width: fit-content;
+  color: var(--nanaac1);
+  border: 1px solid var(--nanabr);
+  padding: 6px 10px;
+  margin-top: 15px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 2px;
+}
+
+.nana-status{
+  color: var(--nanatxt);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 2px;
+  position: absolute;
+  right: 32px;
+  bottom: 42px;
+}
+
+.nana-status span{
+  color: var(--nanaac1);
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 8px;
+}
+
+.nana-about{
+  width: 688px;
+  height: 255px;
+  padding: 25px 30px;
+  border-bottom: 1px solid var(--nanabr);
+  box-sizing: border-box;
+}
+
+.nana-sectiontitle{
+  color: var(--nanaac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nana-sectiontitle i{
+  height: 1px;
+  background: var(--nanabr);
+  flex: 1;
+}
+
+.nana-sectiontitle b{
+  font-size: 7px;
+  line-height: 7px;
+  letter-spacing: 2px;
+}
+
+.nana-abouttext{
+  height: 180px;
+  color: var(--nanatxt);
+  border: 1px dashed var(--nanabr);
+  padding: 18px;
+  margin-top: 15px;
+  font-family: "Roboto Mono", monospace;
+  text-align: justify;
+  font-size: 11px;
+  line-height: 19px;
+  letter-spacing: 0.2px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.nana-abouttext n{
+  background: var(--nanaac1);
+  color: var(--nanabg);
+  padding: 2px 5px;
+  font-weight: 600;
+}
+
+.nana-looking{
+  width: 688px;
+  height: 230px;
+  border-bottom: 1px solid var(--nanabr);
+  display: flex;
+  flex-direction: row;
+}
+
+.nana-lookingbox{
+  width: 344px;
+  height: 230px;
+  padding: 24px 25px;
+  box-sizing: border-box;
+}
+
+.nana-lookingbox:first-child{
+  border-right: 1px solid var(--nanabr);
+}
+
+.nana-list{
+  height: 155px;
+  color: var(--nanatxt);
+  border: 1px dashed var(--nanabr);
+  padding: 15px;
+  margin-top: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.nana-list::first-letter{
+  color: var(--nanaac1);
+}
+
+.nana-no{
+  color: var(--nanatxt2);
+}
+
+.nana-fandoms{
+  width: 688px;
+  height: 540px;
+  border-bottom: 1px solid var(--nanabr);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nana-box{
+  width: 229px;
+  height: 270px;
+  padding: 22px 18px;
+  border-right: 1px solid var(--nanabr);
+  border-bottom: 1px solid var(--nanabr);
+  box-sizing: border-box;
+}
+
+.nana-box:nth-child(3){
+  border-right: none;
+}
+
+.nana-widebox{
+  width: 344px;
+  height: 270px;
+}
+
+.nana-widebox:last-child{
+  border-right: none;
+}
+
+.nana-scroll{
+  height: 205px;
+  color: var(--nanatxt);
+  border: 1px dashed var(--nanabr);
+  padding: 12px;
+  margin-top: 14px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 9px;
+  line-height: 13px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.nana-item{
+  margin-bottom: 14px;
+  position: relative;
+  padding-left: 13px;
+}
+
+.nana-item:before{
+  content: "▶";
+  color: var(--nanaac1);
+  font-size: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nana-item b{
+  color: var(--nanatxt);
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 500;
+  display: block;
+}
+
+.nana-item span{
+  color: var(--nanatxt2);
+  font-size: 9px;
+  line-height: 10px;
+  display: block;
+  margin-top: 3px;
+}
+
+.nana-plots{
+  width: 688px;
+  height: 470px;
+  padding: 25px 28px;
+  border-bottom: 1px solid var(--nanabr);
+  box-sizing: border-box;
+}
+
+.nana-plotbox{
+  height: 390px;
+  border: 1px dashed var(--nanabr);
+  padding: 18px;
+  margin-top: 15px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.nana-plot{
+  padding-bottom: 22px;
+  margin-bottom: 22px;
+  border-bottom: 1px solid var(--nanabr);
+}
+
+.nana-plot:last-child{
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.nana-plothead{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.nana-plothead n{
+  background: var(--nanaac1);
+  color: var(--nanabg);
+  padding: 5px 8px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 600;
+}
+
+.nana-plothead b{
+  color: var(--nanatxt);
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  line-height: 13px;
+  font-weight: 500;
+}
+
+.nana-plothead span{
+  color: var(--nanatxt2);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.8px;
+}
+
+.nana-plottext{
+  color: var(--nanatxt);
+  margin-top: 15px;
+  padding-left: 40px;
+  font-family: "Roboto Mono", monospace;
+  text-align: justify;
+  font-size: 10.5px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+}
+
+.nana-footer{
+  width: 688px;
+  height: 90px;
+  padding: 18px 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 45px;
+  box-sizing: border-box;
+}
+
+.nana-lyrics{
+  width: 260px;
+  color: var(--nanatxt2);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  text-align: justify;
+  font-size: 8px;
+  line-height: 13px;
+  letter-spacing: 0.5px;
+}
+
+.nana-footdata{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.nana-footdata span{
+  color: var(--nanaac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 1.5px;
+}
+
+.nana-footdata b{
+  color: var(--nanatxt);
+  font-family: "Roboto Mono", monospace;
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: 500;
+}
+
+.nana-target{
+  color: var(--nanaac1);
+  font-size: 23px;
+  line-height: 23px;
+  margin-left: auto;
+}
+
+.nana-abouttext::-webkit-scrollbar,
+.nana-list::-webkit-scrollbar,
+.nana-scroll::-webkit-scrollbar,
+.nana-plotbox::-webkit-scrollbar{
+  width: 4px;
+}
+
+.nana-abouttext::-webkit-scrollbar-track,
+.nana-list::-webkit-scrollbar-track,
+.nana-scroll::-webkit-scrollbar-track,
+.nana-plotbox::-webkit-scrollbar-track{
+  background: var(--nanabg2);
+}
+
+.nana-abouttext::-webkit-scrollbar-thumb,
+.nana-list::-webkit-scrollbar-thumb,
+.nana-scroll::-webkit-scrollbar-thumb,
+.nana-plotbox::-webkit-scrollbar-thumb{
+  background: var(--nanaac1);
+}
