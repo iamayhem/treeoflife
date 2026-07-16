@@ -1,7 +1,7 @@
 @font-face {
     font-family: "Caldareth";
-    src: url("./LeagueGothic-Regular.woff2") format("woff2");
-    font-weight: 400;
+    src: url("./Caldareth.ttf") format("truetype");
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
