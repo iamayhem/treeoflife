@@ -132,7 +132,7 @@
 }
 
 .hundredth-tags {
-  width: 520px;
+  width: 600px;
   height: 40px;
   border-top: 1px solid var(--hundredthbr);
   border-bottom: 1px solid var(--hundredthbr);
@@ -153,7 +153,6 @@
   letter-spacing: 4px;
   padding-left: 14px;
   padding-right: 14px;
-  flex-shrink: 0;
 }
 
 .hundredth-tags m {
