@@ -162,8 +162,7 @@
   background: var(--hundredthac1);
   border-radius: 100%;
   display: block;
-  box-shadow: 0 0 7px rgba(150, 63, 61, 0.4);
-  flex-shrink: 0;
+  box-shadow: 0px 0px 7px rgba(150, 63, 61, 0.4);
 }
 
 .hundredth-characters {
