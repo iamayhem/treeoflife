@@ -56,7 +56,11 @@
   content: "";
   width: 360px;
   height: 270px;
-  background: radial-gradient(circle, color-mix(in srgb, var(--hundredthac1) 20%, transparent) 0, color-mix(in srgb, var(--hundredthac1) 10%, transparent) 42%, transparent 72%);
+  background: radial-gradient(
+    circle,
+    color-mix(in srgb, var(--hundredthac1) 20%, transparent) 0,
+    color-mix(in srgb, var(--hundredthac1) 10%, transparent) 42%,
+    transparent 72%);
   border-radius: 100%;
   position: absolute;
   top: -90px;
