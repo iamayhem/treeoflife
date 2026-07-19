@@ -1,0 +1,330 @@
+@font-face {
+  font-family: "Caldareth";
+  src: url("https://iamayhem.github.io/treeoflife/fonts/Caldareth.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --hundredthac1: #963f3d;
+  --hundredthbg: #0c0b0a;
+  --hundredthbg2: #100f0e;
+  --hundredthbr: #41352e;
+  --hundredthbr2: #281f1b;
+  --hundredthtxt: #c9bdad;
+  --hundredthtxt2: #8c7c6d;
+}
+
+.hundredth-plot {
+  width: 720px;
+  height: auto;
+  background:
+    radial-gradient(circle at 50% 5%, rgba(108, 43, 40, 0.2) 0, rgba(67, 28, 26, 0.1) 18%, transparent 38%),
+    linear-gradient(to bottom, #0d0b0b, var(--hundredthbg));
+  border: 1px solid var(--hundredthbr);
+  margin: 0 auto;
+  padding: 50px 40px 25px;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+}
+
+.hundredth-plot:before {
+  content: "";
+  border: 1px solid var(--hundredthbr2);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  bottom: 10px;
+  left: 10px;
+}
+
+.hundredth-postheader {
+  width: 620px;
+  height: 390px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.hundredth-postheader:before {
+  content: "";
+  width: 360px;
+  height: 270px;
+  background: radial-gradient(circle, rgba(118, 44, 42, 0.2) 0, rgba(76, 30, 29, 0.1) 42%, transparent 72%);
+  border-radius: 100%;
+  position: absolute;
+  top: -90px;
+  left: 130px;
+  z-index: -1;
+}
+
+.hundredth-postpic {
+  width: 215px;
+  height: 320px;
+  background: var(--hundredthbg);
+  border: 1px solid var(--hundredthbr);
+  border-radius: 108px 108px 0px 0px;
+  padding: 5px;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.hundredth-postpic:after {
+  content: "";
+  background:
+    linear-gradient(to bottom, transparent 55%, rgba(10, 9, 8, 0.8)),
+    linear-gradient(to right, rgba(104, 42, 39, .12), transparent 35%, transparent 65%, rgba(104, 42, 39, 0.1));
+  border-radius: 103px 103px 0px 0px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+}
+
+.hundredth-postpic img {
+  width: 203px;
+  height: 308px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 102px 102px 0px 0px;
+  display: block;
+  filter: brightness(0.5) grayscale(100%) contrast(1.1) sepia(0.1);
+}
+
+.hundredth-posttitles {
+  width: 365px;
+  height: auto;
+  margin-left: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hundredth-postmoon {
+  width: 270px;
+  height: 30px;
+  color: var(--hundredthtxt);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hundredth-postmoon span {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--hundredthac1));
+  flex: 1;
+}
+
+.hundredth-postmoon span:last-child {
+  background: linear-gradient(to left, transparent, var(--hundredthac1));
+}
+
+.hundredth-postmoon m {
+  color: var(--hundredthtxt);
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: normal;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-shadow: 0px 0px 10px rgba(150, 63, 61, 0.5);
+  transform: rotate(90deg);
+}
+
+.hundredth-posttitle {
+  color: var(--hundredthtxt);
+  font-family: "Caldareth";
+  font-size: 55px;
+  line-height: 64px;
+  text-align: center;
+  text-transform: lowercase;
+  letter-spacing: 1px;
+  margin-top: 5px;
+  text-shadow: 2px 3px 0px rgba(99, 38, 36, 0.2);
+}
+
+.hundredth-postline {
+  width: 320px;
+  height: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hundredth-postline span {
+  width: 145px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--hundredthbr));
+}
+
+.hundredth-postline span:last-child {
+  background: linear-gradient(to left, transparent, var(--hundredthbr));
+}
+
+.hundredth-postline m {
+  width: 5px;
+  height: 5px;
+  background: var(--hundredthac1);
+  border-radius: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: block;
+  box-shadow: 0px 0px 7px rgba(150, 63, 61, 0.5);
+}
+
+.hundredth-postsub {
+  width: 340px;
+  color: var(--hundredthtxt2);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 11px;
+  line-height: 15px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  margin-top: 8px;
+}
+
+.hundredth-posttext {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hundredthbr2);
+  margin-top: 28px;
+  padding: 32px 55px 40px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.hundredth-posttext2 {
+  color: var(--hundredthtxt);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: justify;
+  margin-top: 25px;
+}
+
+.hundredth-posttext2 b,
+.hundredth-posttext2 strong {
+  color: var(--hundredthac1);
+  font-weight: 500;
+}
+
+.hundredth-posttext2 i,
+.hundredth-posttext2 italic {
+  color: var(--hundredthtxt2);
+}
+
+.hundredth-corner {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+}
+
+.hundredth-corner.tl {
+  top: 9px;
+  left: 9px;
+  border-top: 1px solid var(--hundredthbr);
+  border-left: 1px solid var(--hundredthbr);
+}
+
+.hundredth-corner.tr {
+  top: 9px;
+  right: 9px;
+  border-top: 1px solid var(--hundredthbr);
+  border-right: 1px solid var(--hundredthbr);
+}
+
+.hundredth-corner.bl {
+  bottom: 9px;
+  left: 9px;
+  border-bottom: 1px solid var(--hundredthbr);
+  border-left: 1px solid var(--hundredthbr);
+}
+
+.hundredth-corner.br {
+  right: 9px;
+  bottom: 9px;
+  border-right: 1px solid var(--hundredthbr);
+  border-bottom: 1px solid var(--hundredthbr);
+}
+
+.hundredth-posttags {
+  width: 640px;
+  height: 40px;
+  border-top: 1px solid var(--hundredthbr);
+  border-bottom: 1px solid var(--hundredthbr);
+  margin-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hundredth-posttags span {
+  color: var(--hundredthtxt);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 9px;
+  line-height: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-left: 14px;
+  padding-right: 14px;
+}
+
+.hundredth-posttags m {
+  width: 4px;
+  height: 4px;
+  background: var(--hundredthac1);
+  border-radius: 100%;
+  display: block;
+  box-shadow: 0px 0px 7px rgba(150, 63, 61, 0.4);
+}
+
+.hundredth-postfooter {
+  width: 260px;
+  height: 25px;
+  margin: 20px auto 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hundredth-postfooter span {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--hundredthbr));
+  flex: 1;
+}
+
+.hundredth-postfooter span:last-child {
+  background: linear-gradient(to left, transparent, var(--hundredthbr));
+}
+
+.hundredth-postfooter m {
+  color: var(--hundredthac1);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: normal;
+  margin-left: 12px;
+  margin-right: 12px;
+  transform: rotate(90deg);
+}
