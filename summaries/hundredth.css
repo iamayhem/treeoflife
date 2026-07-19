@@ -24,7 +24,7 @@
       color-mix(in srgb, var(--hundredthac1) 20%, transparent) 0,
       color-mix(in srgb, var(--hundredthac1) 10%, transparent) 18%,
       transparent 38%),
-    linear-gradient(to bottom, var(--hundredthbg2), var(--hundredthbg));
+    linear-gradient(to bottom, #0d0b0b, var(--hundredthbg));
   border: 1px solid var(--hundredthbr);
   margin: 0 auto;
   padding: 50px 40px 25px;
@@ -65,8 +65,7 @@
   position: absolute;
   top: -90px;
   left: 130px;
-  z-index: -1;
-}
+  z-index: -1;}
 
 .hundredth-moon {
   width: 270px;
