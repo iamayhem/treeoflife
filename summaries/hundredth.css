@@ -229,12 +229,12 @@
 .hundredth-name {
   color: var(--hundredthac1);
   font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
+  font-size: 23px;
   line-height: 22px;
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   margin-top: 18px;
 }
 
