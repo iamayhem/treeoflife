@@ -1,0 +1,307 @@
+@font-face {
+  font-family: 'League';
+    src: url('https://dl.dropbox.com/scl/fi/4gxeng8d0x16n75u4wjvs/LeagueGothic-Condensed.ttf?rlkey=wqvcl3dqk0pchksrp3179oll9&st=gwkq8sug&dl=0');}
+
+:root {
+  --miracleac1: #BD0F0F;
+  --miraclebg: #121212;
+  --miraclebr: #292929;
+  --miracletxt: #ABABAB;
+  --miracletxt2: #8C8C8C;}
+
+body.light-mode {
+  --miraclebg: #E6E6E6;
+  --miraclebr: #C4C4C4;
+  --miracletxt: #121212;
+  --miracletxt2: #DBDBDB;
+}
+
+.miracle-resumen{
+  width: 800px;
+  height: auto;
+  background: var(--miraclebg);
+  border: 1px solid var(--miraclebr);
+  margin: 0 auto;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.miracle-barra{
+  height: 45px;
+  padding: 10px;
+  border-bottom: 1px solid var(--miraclebr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  color: var(--miracletxt);
+}
+
+.miracle-barra span{
+  text-transform: uppercase;
+  color: var(--miracletxt2);
+  font-size: 10px;
+  line-height: 12px;
+  font-family: "Roboto Mono", monospace;
+  letter-spacing: 0.5px;
+}
+
+.miracle-barra n{
+  color: var(--miracleac1);
+}
+
+.miracle-middle{
+  border-bottom: 1px solid var(--miraclebr);
+  display: flex;
+  flex-direction: row;
+}
+
+.miracle-box1{
+  width: 320px;
+  height: 280px;
+  border-right: 1px solid var(--miraclebr);
+}
+
+.miracle-box1 img{
+  width: 320px;
+  height: 280px;
+  object-fit: cover;
+  object-position: left;
+  filter: brightness(0.5) saturate(0) contrast(1.1);
+}
+
+.miracle-box2{
+  width: 480px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.miracle-title{
+  font-family: 'League';
+  font-size: 95px;
+  line-height: 95px;
+  color: var(--miracletxt);
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--miraclebr);
+  letter-spacing: 1px;
+}
+
+.miracle-subtitle1{
+  text-align: left;
+  color: var(--miracleac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 2px;
+  margin-left: -185px;
+  animation: classifiedBlink 1.8s infinite;
+}
+
+/* Efecto parpadeo */
+@keyframes classifiedBlink {
+  0%{
+    opacity: 1;
+    text-shadow: 0 0 3px var(--miracleac1);
+  }
+
+  15%{
+    opacity: 0.2;
+  }
+
+  20%{
+    opacity: 1;
+  }
+
+  35%{
+    opacity: 0.1;
+  }
+
+  40%{
+    opacity: 1;
+    text-shadow: 0 0 6px var(--miracleac1);
+  }
+
+  100%{
+    opacity: 1;
+    text-shadow: 0 0 3px var(--miracleac1);
+  }
+}
+
+.miracle-subtitle2{
+  color: var(--miracletxt);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  margin-left: -25px;
+}
+
+.miracle-tags{
+  width: 332px;
+  height: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 10px;
+  color: var(--miracletxt);
+}
+
+.miracle-tags span{
+  color: var(--miracletxt2);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 1px;
+  border: 1px solid var(--miraclebr);
+  padding: 5px;
+}
+
+.miracle-bottom{
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.classified-box{
+  position: relative;
+  padding: 50px;
+  color: var(--miracletxt);
+  font-family: "Roboto Mono", monospace;
+  text-align: justify;
+  font-size: 11.5px;
+  line-height: 22px;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+.classified-box b,
+.classified-box strong{
+  color: var(--miracleac1);
+  text-transform: uppercase;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.classified-box i,
+.classified-box italic{
+  border-bottom: 0.5px solid var(--miracleac1);
+}
+
+.corner{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+
+/* Top Left */
+.tl{
+  top: 18px;
+  left: 18px;
+  border-top: 1px solid var(--miraclebr);
+  border-left: 1px solid var(--miraclebr);
+}
+
+/* Top Right */
+.tr{
+  top: 18px;
+  right: 18px;
+  border-top: 1px solid var(--miraclebr);
+  border-right: 1px solid var(--miraclebr);
+}
+
+/* Bottom Left */
+.bl{
+  bottom: 18px;
+  left: 18px;
+  border-bottom: 1px solid var(--miraclebr);
+  border-left: 1px solid var(--miraclebr);
+}
+
+/* Bottom Right */
+.br{
+  bottom: 18px;
+  right: 18px;
+  border-bottom: 1px solid var(--miraclebr);
+  border-right: 1px solid var(--miraclebr);
+}
+
+.miracle-characters{
+  width: 100%;
+  height: 250px;
+  border-top: 1px solid var(--miraclebr);
+  display: flex;
+}
+
+.character-file{
+  position: relative;
+  width: 420px;
+  padding: 35px;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.frame-corner{
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  opacity: .9;
+}
+
+.character-portrait{
+  flex-shrink: 0;
+}
+
+.character-portrait img{
+  width: 130px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  border: 1px solid var(--miraclebr);
+  filter: grayscale(100%) contrast(105%);
+}
+
+.character-data{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.character-label{
+  color: var(--miracleac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 8px;
+  letter-spacing: 2px;
+  line-height: 10px;
+  text-transform: uppercase;
+  margin-bottom: -5px;
+}
+
+.character-name{
+  color: var(--miracletxt);
+  font-family: 'League';
+  font-size: 50px;
+  text-transform: uppercase;
+  line-height: 40px;
+}
+
+.character-description{
+  color: var(--miracletxt);
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 12px;
+  max-width: 380px;
+  text-transform: uppercase;
+  margin-top: -7px;
+}
