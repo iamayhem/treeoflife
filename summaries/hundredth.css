@@ -132,7 +132,7 @@
 }
 
 .hundredth-tags {
-  width: 600px;
+  width: 520px;
   height: 40px;
   border-top: 1px solid var(--hundredthbr);
   border-bottom: 1px solid var(--hundredthbr);
@@ -161,7 +161,7 @@
   background: var(--hundredthac1);
   border-radius: 100%;
   display: block;
-  box-shadow: 0px 0px 7px rgba(150, 63, 61, 0.4);
+  box-shadow: 0 0 7px rgba(150, 63, 61, 0.4);
 }
 
 .hundredth-characters {
