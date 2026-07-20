@@ -146,7 +146,7 @@ body.light-mode {
 
 .miraclepostbox b,
 .miraclepostbox strong{
-  color: var(--miracleac2);
+  color: var(--miracleac1);
   font-weight: 900;
 }
 
