@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: Gothic;
+    src: url(https://dl.dropbox.com/scl/fi/9y67klokpox7pt3apxue8/shock-surgent.otf?rlkey=vu74u8w5kwvpsr4sn3ia7eesb&st=2ret8wvx&dl=0);
+}
+
+.cp-fondo{
+    width: 550px;
+    height: auto;
+    margin: 0 auto;
+    border: 1px solid var(--bor2);
+    border-radius: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.cp-caja{
+    width: 550px;
+    height: 180px;
+    background-image: var(--imgsuk1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--acent2);
+    background-blend-mode: multiply;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.cp-caja img{
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid white;
+    padding: 5px;
+}
+
+.cp-text{
+    width: 190px;
+    color: #fff;
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 8px;
+    text-transform: uppercase;
+    line-height: 11px;
+    letter-spacing: 1px;
+    text-align: justify;
+    border-left: 1px solid white;
+    padding-left: 20px;
+}
+
+.cp-text span{
+    font-size: 12px;
+    font-family: Gothic;
+    text-transform: uppercase;
+    line-height: 12px;
+    letter-spacing: .4px;
+}
+
+.cp-dat{
+    border-top: 1px solid var(--acent2);
+    border-bottom: 1px solid var(--acent2);
+    font-family: "Nanum Gothic Coding", monospace;
+    font-size: 8px;
+    text-transform: uppercase;
+    line-height: 11px;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 2px;
+    font-weight: 600;
+    color: var(--acent2);
+}
+
+.cp-post{
+    padding: 60px 70px 40px 70px;
+    text-align: justify;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: "Nunito", sans-serif;
+}
+
+.cp-post strong{
+    color: var(--acent3);
+}
