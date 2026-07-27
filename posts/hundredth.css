@@ -15,7 +15,7 @@
   --hundredthtxt2: #8c7c6d;
 }
 
-. hundredth-plotpost{
+. hundredth-post{
   width: 720px;
   height: auto;
   background:
@@ -29,7 +29,7 @@
   overflow: hidden;
 }
 
-.hundredth-plotpost:before {
+.hundredth-post:before {
   content: "";
   border: 1px solid var(--hundredthbr2);
   position: absolute;
