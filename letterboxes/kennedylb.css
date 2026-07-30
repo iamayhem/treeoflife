@@ -1,0 +1,191 @@
+:root {
+  --kennedyletterac1: #8DD8C4;
+  --kennedyletterbg: #080A09;
+  --kennedyletterbr: #28453E;
+  --kennedylettertxt: #E9EEEC;
+  --kennedylettertxt2: #77807D;
+}
+
+.kennedyletter-caja {
+  width: 400px;
+  height: auto;
+  background: var(--kennedyletterbg);
+  border: 1px solid var(--kennedyletterbr);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.kennedyletter-lateral {
+  width: 32px;
+  background: var(--kennedyletterac1);
+  color: var(--kennedyletterbg);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.kennedyletter-numero {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Roboto Mono", monospace;
+  font-size: 8px;
+  line-height: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.kennedyletter-barras {
+  width: 12px;
+  height: 58px;
+  position: absolute;
+  left: 12px;
+  bottom: 42px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--kennedyletterbg) 0,
+    var(--kennedyletterbg) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.kennedyletter-estrella {
+  position: absolute;
+  left: 10px;
+  bottom: 12px;
+  font-size: 16px;
+  line-height: 12px;
+}
+
+.kennedyletter-principal {
+  width: 368px;
+  height: auto;
+  background: var(--kennedyletterbg);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.kennedyletter-superior {
+  width: 100%;
+  height: 40px;
+  padding: 10px 15px;
+  border-bottom: 1px solid var(--kennedyletterbr);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.kennedyletter-database {
+  color: var(--kennedyletterac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 7px;
+  line-height: 9px;
+  letter-spacing: 1.5px;
+}
+
+.kennedyletter-code {
+  color: var(--kennedyletterac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 6px;
+  line-height: 7px;
+  letter-spacing: 1px;
+}
+
+.kennedyletter-contenido {
+  width: 100%;
+  height: auto;
+  padding: 20px 18px 22px;
+  box-sizing: border-box;
+}
+
+.kennedyletter-titulo {
+  color: var(--kennedyletterac1);
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 37px;
+  line-height: 35px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kennedyletter-subtitulo {
+  width: fit-content;
+  color: var(--kennedyletterac1);
+  border: 1px solid var(--kennedyletterbr);
+  padding: 3px 7px;
+  margin-top: 5px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 7px;
+  line-height: 9px;
+  letter-spacing: 1px;
+  box-sizing: border-box;
+}
+
+.kennedyletter-texto {
+  width: 100%;
+  height: auto;
+  color: var(--kennedylettertxt);
+  margin-top: 18px;
+  font-family: "Roboto Mono", monospace;
+  text-align: left;
+  font-size: 9px;
+  line-height: 16px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  box-sizing: border-box;
+}
+
+.kennedyletter-inferior{
+  width:100%;
+  min-height:40px;
+  height:auto;
+  border-top:1px solid var(--kennedyletterbr);
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  box-sizing:border-box;
+}
+
+.kennedyletter-status{
+  width:65%;
+  min-height:40px;
+  color:var(--kennedylettertxt2);
+  padding:12px;
+  border-right:1px solid var(--kennedyletterbr);
+  font-family:"Roboto Mono", monospace;
+  text-transform:uppercase;
+  font-size:8px;
+  line-height:14px;
+  letter-spacing:.7px;
+  box-sizing:border-box;
+}
+
+.kennedyletter-status b{
+  color:var(--kennedyletterac1);
+  font-weight:500;
+}
+
+.kennedyletter-fecha{
+  width:35%;
+  min-height:40px;
+  color:var(--kennedyletterac1);
+  padding:12px 6px;
+  font-family:"Roboto Mono", monospace;
+  text-align:center;
+  text-transform:uppercase;
+  font-size:8px;
+  line-height:14px;
+  letter-spacing:.7px;
+  box-sizing:border-box;
+}
