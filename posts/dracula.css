@@ -244,12 +244,6 @@
   color: var(--draculatxt2);
 }
 
-.draculapostbox p,
-.draculapostbox span{
-  font-family: "Crimson Text", serif;
-  font-size: 15px;
-}
-
 .draculapost-bottom{
   width: 100%;
   height: auto;
