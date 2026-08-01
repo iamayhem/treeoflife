@@ -53,6 +53,7 @@
   left: 8px;
   border: 1px solid var(--draculabr);
   z-index: 1;
+  pointer-events: none;
 }
 
 .dracula-header{
