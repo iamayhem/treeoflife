@@ -1,0 +1,476 @@
+@font-face {
+  font-family: 'Wild Gothic';
+  src: url('https://iamayhem.github.io/treeoflife/fonts/wildgothic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --draculaac1: #872341;
+  --draculaac2: #872341;
+  --draculabg: #090809;
+  --draculabg2: #0E0C0D;
+  --draculabr: #2B2527;
+  --draculabr2: #181416;
+  --draculatxt: #C9C0BD;
+  --draculatxt2: #81787A;
+  --draculaheader: url('https://i.pinimg.com/736x/88/a8/28/88a828bf5e79cc9664027fbe8dd9e8bd.jpg');
+}
+
+
+.dracula-resumen{
+  width: 800px;
+  height: auto;
+  background: var(--draculabg);
+  border: 1px solid var(--draculaac1);
+  border-radius: 32px;
+  corner-shape: scoop;
+  margin: 20px auto;
+  padding: 9px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.dracula-contenido{
+  width: 780px;
+  height: auto;
+  background: var(--draculabg);
+  border: 1px solid var(--draculabr);
+  border-radius: 25px;
+  corner-shape: scoop;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dracula-contenido:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid var(--draculabr);
+  z-index: 1;
+}
+
+.dracula-header{
+  width: 100%;
+  height: 450px;
+  padding: 55px 60px 45px 60px;
+  background: var(--draculabg);
+  border-bottom: 1px solid var(--draculabr);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.dracula-header:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: var(--draculaheader);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.dracula-header:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 8, 9, 0.1),
+    rgba(9, 8, 9, 0.5),
+    var(--draculabg)
+  );
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.dracula-title,
+.dracula-titleline,
+.dracula-quote,
+.dracula-tags{
+  position: relative;
+  z-index: 1;
+}
+
+.dracula-title{
+  font-family: 'Wild Gothic';
+  font-size: 94px;
+  line-height: 90px;
+  color: var(--draculaac1);
+  text-align: center;
+}
+
+.dracula-titleline{
+  width: 470px;
+  height: 18px;
+  margin: 12px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.dracula-titleline span{
+  height: 1px;
+  background: var(--draculaac2);
+  flex: 1;
+}
+
+.dracula-titleline n{
+  width: 9px;
+  height: 9px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+}
+
+.dracula-quote{
+  color: var(--draculatxt);
+  margin-top: 14px;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.dracula-tags{
+  margin-top: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.dracula-tags span{
+  color: var(--draculatxt2);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 10px;
+  letter-spacing: 2px;
+}
+
+.dracula-tags n{
+  width: 6px;
+  height: 6px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+}
+
+.dracula-summary{
+  width: 100%;
+  height: auto;
+  padding: 100px 65px 100px 65px;
+  color: var(--draculatxt);
+  font-family: "Crimson Text", serif;
+  text-align: justify;
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  box-sizing: border-box;
+}
+
+.dracula-summary p{
+  margin: 0px 0px 18px 0px;
+}
+
+.dracula-summary p:last-child{
+  margin-bottom: 0px;
+}
+
+.dracula-summary p:first-child::first-letter{
+  color: var(--draculaac1);
+  font-family: 'Wild Gothic';
+  font-size: 105px;
+  line-height: 72px;
+  float: left;
+  margin: 7px 18px 0px 0px;
+}
+
+.dracula-summary b,
+.dracula-summary strong{
+  color: var(--draculaac1);
+  font-weight: 600;
+}
+
+.dracula-summary i{
+  color: var(--draculatxt2);
+}
+
+.dracula-separator1{
+  width: 100%;
+  height: 1px;
+  background: var(--draculabr);
+  margin: 0px auto;
+}
+
+.dracula-characters{
+  width: 100%;
+  height: auto;
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  box-sizing: border-box;
+}
+
+.dracula-character{
+  width: 330px;
+  min-height: 235px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+.dracula-portrait{
+  width: 145px;
+  height: 220px;
+  background: var(--draculabg);
+  border: 1px solid var(--draculaac1);
+  border-radius: 15px;
+  corner-shape: scoop;
+  padding: 5px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.dracula-portrait img{
+  width: 130px;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  corner-shape: scoop;
+  display: block;
+  filter: grayscale(100%) contrast(110%) brightness(55%);
+  transition: 0.5s ease;
+}
+
+.dracula-data{
+  width: 160px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.dracula-name{
+  width: 100%;
+  color: var(--draculatxt);
+  font-family: 'Wild Gothic';
+  text-align: center;
+  font-size: 38px;
+  line-height: 40px;
+}
+
+.dracula-nameline{
+  width: 100%;
+  height: 12px;
+  margin: 10px 0px 14px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.dracula-nameline span{
+  height: 1px;
+  background: var(--draculaac2);
+  flex: 1;
+}
+
+.dracula-nameline n{
+  width: 7px;
+  height: 7px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+}
+
+.dracula-info{
+  width: 100%;
+  margin-bottom: 9px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.dracula-info:last-child{
+  margin-bottom: 0px;
+}
+
+.dracula-info span{
+  width: 60px;
+  color: var(--draculaac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.dracula-info b{
+  color: var(--draculatxt2);
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  text-align: right;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  flex: 1;
+}
+
+.dracula-separator2{
+  width: 670px;
+  height: 20px;
+  margin: 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.dracula-separator2 span{
+  height: 1px;
+  background: var(--draculabr);
+  flex: 1;
+}
+
+.dracula-separator2 n{
+  width: 10px;
+  height: 10px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.dracula-chapters{
+  width: 100%;
+  height: auto;
+  padding: 30px 50px 55px 50px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.dracula-chapter{
+  width: 330px;
+  min-height: 36px;
+  padding: 0px 10px;
+  border-bottom: 1px solid var(--draculabr2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  transition: 0.4s ease;
+  box-sizing: border-box;
+}
+
+.dracula-chapter:before{
+  content: "";
+  width: 0px;
+  height: 100%;
+  background: var(--draculaac2);
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0.3;
+  transition:all ease 0.5s;
+}
+
+.dracula-chapter:hover:before{
+  width: 100%;
+}
+
+.dracula-chapternumber{
+  width: 55px;
+  color: var(--draculaac1);
+  font-family: 'Wild Gothic';
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 600;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transition:all ease 0.5s;
+}
+
+.dracula-chaptername{
+  width: 250px;
+  color: var(--draculatxt);
+  font-family: "Crimson Text", serif;
+  font-size: 9px;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 2;
+  transition:all ease 0.5s;
+  
+}
+
+.dracula-chapter a{
+  width: 30px;
+  color: var(--draculaac1);
+  font-family: "Roboto Mono", monospace;
+  text-align: right;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 18px;
+  position: relative;
+  z-index: 2;
+  flex-shrink: 0;
+  transition:all ease 0.5s;
+}
+
+.dracula-chapter:hover .dracula-chapternumber{
+  color: var(--draculatxt);
+  transform: translateX(4px);
+}
+
+.dracula-chapter:hover .dracula-chaptername{
+  color: var(--draculaac1);
+  transform: translateX(4px);
+}
+
+.dracula-chapter:hover a{
+  color: var(--draculatxt);
+  transform: translateX(3px);
+}
