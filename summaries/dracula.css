@@ -193,15 +193,7 @@
   box-sizing: border-box;
 }
 
-.dracula-summary p{
-  margin: 0px 0px 18px 0px;
-}
-
-.dracula-summary p:last-child{
-  margin-bottom: 0px;
-}
-
-.dracula-summary p:first-child::first-letter{
+.dracula-capital{
   color: var(--draculaac1);
   font-family: 'Wild Gothic';
   font-size: 105px;
