@@ -186,7 +186,7 @@
   color: var(--draculatxt);
   font-family: "Crimson Text", serif;
   text-align: justify;
-  font-size: 13px;
+  font-size: 15px;
   line-height: 26px;
   font-weight: 400;
   letter-spacing: 0.2px;
@@ -223,7 +223,7 @@
 .dracula-summary p,
 .dracula-summary span{
   font-family: "Crimson Text", serif;
-  font-size: 13px;
+  font-size: 15px;
 }
 
 .dracula-separator1{
