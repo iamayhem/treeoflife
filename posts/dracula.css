@@ -225,15 +225,7 @@
   box-sizing: border-box;
 }
 
-.draculapostbox p{
-  margin: 0px 0px 18px 0px;
-}
-
-.draculapostbox p:last-child{
-  margin-bottom: 0px;
-}
-
-.draculapostbox p:first-child::first-letter{
+.draculapost-capital{
   color: var(--draculaac1);
   font-family: 'Wild Gothic';
   font-size: 105px;
