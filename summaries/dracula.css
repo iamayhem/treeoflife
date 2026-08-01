@@ -41,7 +41,6 @@
   position: relative;
   overflow: hidden;
   box-sizing: border-box;
-  pointer-events: none;
 }
 
 .dracula-contenido:before{
