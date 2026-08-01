@@ -1,0 +1,312 @@
+
+@font-face {
+  font-family: 'Wild Gothic';
+  src: url('https://iamayhem.github.io/treeoflife/fonts/wildgothic.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --draculaac1: #872341;
+  --draculaac2: #872341;
+  --draculabg: #090809;
+  --draculabg2: #0E0C0D;
+  --draculabr: #2B2527;
+  --draculabr2: #181416;
+  --draculatxt: #C9C0BD;
+  --draculatxt2: #81787A;
+  --draculapostheader: url('https://i.pinimg.com/736x/88/a8/28/88a828bf5e79cc9664027fbe8dd9e8bd.jpg');
+}
+
+.dracula-post{
+  width: 800px;
+  height: auto;
+  background: var(--draculabg);
+  border: 1px solid var(--draculaac1);
+  border-radius: 32px;
+  corner-shape: scoop;
+  margin: 20px auto;
+  padding: 9px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.draculapost-contenido{
+  width: 780px;
+  height: auto;
+  background: var(--draculabg);
+  border: 1px solid var(--draculabr);
+  border-radius: 25px;
+  corner-shape: scoop;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.draculapost-contenido:before{
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  bottom: 8px;
+  left: 8px;
+  border: 1px solid var(--draculabr);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.draculapost-top{
+  width: 100%;
+  height: auto;
+  padding: 80px 60px 80px 60px;
+  background: var(--draculabg);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.draculapost-top:before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-image: var(--draculapostheader);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  filter: grayscale(100%);
+  opacity: 0.3;
+  z-index: -2;
+}
+
+.draculapost-top:after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(9, 8, 9, 0.1),
+    rgba(9, 8, 9, 0.5),
+    var(--draculabg)
+  );
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.draculapostchapter,
+.draculaposttitle,
+.draculaposttitleline,
+.draculapostsubtitle{
+  position: relative;
+  z-index: 2;
+}
+
+.draculapostchapter{
+  color: var(--draculaac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 22px;
+  margin-top: 30px;
+}
+
+.draculaposttitle{
+  font-family: 'Wild Gothic';
+  font-size: 94px;
+  line-height: 90px;
+  color: var(--draculaac1);
+  text-align: center;
+}
+
+.draculaposttitleline{
+  width: 300px;
+  height: 18px;
+  margin: 40px auto 0px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.draculaposttitleline span{
+  height: 1px;
+  background: var(--draculaac2);
+  flex: 1;
+}
+
+.draculaposttitleline n{
+  width: 9px;
+  height: 9px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+}
+
+.draculapostsubtitle{
+  color: var(--draculatxt);
+  margin-top: 30px;
+  font-family: "Crimson Text", serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: italic;
+  letter-spacing: 0.3px;
+}
+
+.draculapost-gifbox{
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.draculapost-gif{
+  width: 260px;
+  height: 150px;
+  background: var(--draculabg);
+  border: 1px solid var(--draculaac1);
+  border-radius: 15px;
+  corner-shape: scoop;
+  padding: 5px;
+  position: relative;
+  flex-shrink: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.draculapost-gif img{
+  width: 248px;
+  height: 138px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  corner-shape: scoop;
+  display: block;
+  filter: grayscale(100%) contrast(110%) brightness(55%);
+  transition:all ease 0.5s;
+}
+
+.draculapost-separator{
+  width: 100%;
+  height: 1px;
+  background: var(--draculabr);
+  margin: 0px auto;
+}
+
+.draculapost-middle{
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  box-sizing: border-box;
+}
+
+.draculapostbox{
+  width: 100%;
+  height: auto;
+  padding: 100px 65px 100px 65px;
+  color: var(--draculatxt);
+  font-family: "Crimson Text", serif;
+  text-align: justify;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 0.2px;
+  box-sizing: border-box;
+}
+
+.draculapostbox p{
+  margin: 0px 0px 18px 0px;
+}
+
+.draculapostbox p:last-child{
+  margin-bottom: 0px;
+}
+
+.draculapostbox p:first-child::first-letter{
+  color: var(--draculaac1);
+  font-family: 'Wild Gothic';
+  font-size: 105px;
+  line-height: 72px;
+  float: left;
+  margin: 7px 18px 0px 0px;
+}
+
+.draculapostbox b,
+.draculapostbox strong{
+  color: var(--draculaac1);
+  font-weight: 600;
+}
+
+.draculapostbox i{
+  color: var(--draculatxt2);
+}
+
+.draculapostbox p,
+.draculapostbox span{
+  font-family: "Crimson Text", serif;
+  font-size: 15px;
+}
+
+.draculapost-bottom{
+  width: 100%;
+  height: auto;
+  padding: 45px 55px 55px 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.draculapost-data{
+  width: 130px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+  box-sizing: border-box;
+}
+
+.draculapost-data span{
+  color: var(--draculaac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 9px;
+  line-height: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.draculapost-data b{
+  color: var(--draculatxt);
+  font-family: "Crimson Text", serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.draculapost-bottom n{
+  width: 7px;
+  height: 7px;
+  background: var(--draculaac1);
+  display: block;
+  transform: rotate(45deg);
+  flex-shrink: 0;
+}
