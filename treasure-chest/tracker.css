@@ -1,0 +1,591 @@
+:root {
+  --nanatruckac1: #bfc0ea;
+  --nanatruckbg: #080A09;
+  --nanatruckbg2: #101312;
+  --nanatruckbr: color-mix(in srgb, var(--nanatruckac1) 20%, var(--nanatruckbg));
+  --nanatrucktxt: #E9EEEC;
+  --nanatrucktxt2: #8A9491;
+}
+
+.nanatruck-truck{
+  width: 750px;
+  height: auto;
+  background: var(--nanatruckbg);
+  border: 1px solid var(--nanatruckbr);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.nanatruck-side{
+  width: 62px;
+  min-height: 100%;
+  background: var(--nanatruckac1);
+  color: var(--nanatruckbg);
+  position: relative;
+  flex-shrink: 0;
+}
+
+.nanatruck-code{
+  position: absolute;
+  top: 25px;
+  left: 22px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-family: "Roboto Mono", monospace;
+  font-size: 11px;
+  line-height: 12px;
+  font-weight: 600;
+  letter-spacing: 4px;
+}
+
+.nanatruck-bars{
+  width: 20px;
+  height: 340px;
+  position: absolute;
+  top: 320px;
+  left: 21px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--nanatruckbg) 0,
+    var(--nanatruckbg) 2px,
+    transparent 2px,
+    transparent 5px
+  );
+}
+
+.nanatruck-star{
+  position: absolute;
+  bottom: 24px;
+  left: 20px;
+  font-size: 25px;
+  line-height: 25px;
+}
+
+.nanatruck-content{
+  width: 688px;
+  height: auto;
+  background: var(--nanatruckbg);
+  position: relative;
+  box-sizing: border-box;
+}
+
+.nanatruck-top{
+  width: 688px;
+  height: auto;
+  border-bottom: 1px solid var(--nanatruckbr);
+}
+
+.nanatruck-access{
+  width: 100%;
+  height: 48px;
+  border-bottom: 1px solid var(--nanatruckbr);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nanatruck-access span{
+  height: 48px;
+  color: var(--nanatrucktxt);
+  padding: 17px 25px;
+  border-right: 1px solid var(--nanatruckbr);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 9px;
+  line-height: 12px;
+  letter-spacing: 1.5px;
+  box-sizing: border-box;
+}
+
+.nanatruck-access span:nth-child(2){
+  color: var(--nanatruckac1);
+  font-weight: 600;
+}
+
+.nanatruck-access b{
+  color: var(--nanatruckac1);
+  margin-left: auto;
+  margin-right: 24px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 7px;
+  line-height: 8px;
+  letter-spacing: 2px;
+}
+
+.nanatruck-header{
+  width: 100%;
+  min-height: 245px;
+  height: auto;
+  padding: 35px 28px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 25px;
+  box-sizing: border-box;
+}
+
+.nanatruck-headleft{
+  width: 420px;
+  height: auto;
+}
+
+.nanatruck-title{
+  color: var(--nanatrucktxt);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 70px;
+  line-height: 68px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nanatruck-japanese{
+  width: fit-content;
+  color: var(--nanatruckac1);
+  border: 1px solid var(--nanatruckbr);
+  padding: 7px 14px;
+  margin-top: 18px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 10px;
+  line-height: 13px;
+  letter-spacing: 3px;
+  box-sizing: border-box;
+}
+
+.nanatruck-subtitle{
+  color: var(--nanatrucktxt2);
+  margin-top: 12px;
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 11px;
+  letter-spacing: 1.5px;
+}
+
+.nanatruck-headright{
+  width: 170px;
+  height: 170px;
+  border: 1px solid var(--nanatruckbr);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.nanatruck-status,
+.nanatruck-update{
+  height: 85px;
+  padding: 17px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.nanatruck-status{
+  border-bottom: 1px solid var(--nanatruckbr);
+}
+
+.nanatruck-status span,
+.nanatruck-update span{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 1.5px;
+}
+
+.nanatruck-status b{
+  color: var(--nanatruckac1);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 600;
+}
+
+.nanatruck-update b{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 13px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.nanatruck-counter{
+  width: 100%;
+  height: 66px;
+  border-top: 1px solid var(--nanatruckbr);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nanatruck-counterbox{
+  width: 260px;
+  height: 66px;
+  padding: 0 28px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.nanatruck-counterbox span{
+  color: var(--nanatrucktxt2);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 1.5px;
+}
+
+.nanatruck-counterbox b{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 10px;
+  line-height: 12px;
+  font-weight: 500;
+}
+
+.nanatruck-counter > i{
+  width: 1px;
+  height: 30px;
+  background: var(--nanatruckbr);
+  display: block;
+}
+
+.nanatruck-section{
+  width: 688px;
+  height: auto;
+  padding: 24px 22px 28px;
+  border-bottom: 1px solid var(--nanatruckbr);
+  box-sizing: border-box;
+}
+
+.nanatruck-sectiontitle{
+  color: var(--nanatruckac1);
+  margin-bottom: 22px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 28px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+}
+
+.nanatruck-sectiontitle i{
+  height: 1px;
+  background: var(--nanatruckbr);
+  flex: 1;
+}
+
+.nanatruck-sectiontitle b{
+  color: var(--nanatrucktxt2);
+  font-family: "Roboto Mono", monospace;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  white-space: nowrap;
+}
+
+.nanatruck-mark{
+  width: 13px;
+  height: 13px;
+  position: relative;
+  display: inline-block;
+  flex-shrink: 0;
+}
+
+.nanatruck-mark:before,
+.nanatruck-mark:after{
+  content: "";
+  background: var(--nanatruckac1);
+  position: absolute;
+}
+
+.nanatruck-mark:before{
+  width: 13px;
+  height: 1px;
+  top: 6px;
+  left: 0;
+}
+
+.nanatruck-mark:after{
+  width: 1px;
+  height: 13px;
+  top: 0;
+  left: 6px;
+}
+
+.nanatruck-sectionlink{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  flex-shrink: 0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nanatruck-sectionlink:hover{
+  color: var(--nanatrucktxt);
+  transform: translate(2px, -2px);
+}
+
+.nanatruck-stories{
+  width: 100%;
+  max-height: 460px;
+  padding-right: 6px;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+
+.nanatruck-stories::-webkit-scrollbar{
+  width: 4px;
+}
+
+.nanatruck-stories::-webkit-scrollbar-track{
+  background: var(--nanatruckbg2);
+}
+
+.nanatruck-stories::-webkit-scrollbar-thumb{
+  background: var(--nanatruckac1);
+}
+
+.nanatruck-story{
+  width: 100%;
+  min-height: 88px;
+  border: 1px solid var(--nanatruckbr);
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  position: relative;
+  box-sizing: border-box;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.nanatruck-story:hover{
+  background: var(--nanatruckbg2);
+  border-color: var(--nanatruckac1);
+}
+
+.nanatruck-number{
+  width: 55px;
+  color: var(--nanatruckac1);
+  border-right: 1px solid var(--nanatruckbr);
+  font-family: "Roboto Mono", monospace;
+  font-size: 9px;
+  line-height: 88px;
+  text-align: center;
+  letter-spacing: 1px;
+  flex-shrink: 0;
+}
+
+.nanatruck-storydata{
+  width: 230px;
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+  box-sizing: border-box;
+}
+
+.nanatruck-storydata strong{
+  width: fit-content;
+  color: var(--nanatruckac1);
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 21px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.nanatruck-storydata span{
+  color: var(--nanatrucktxt);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.7px;
+}
+
+.nanatruck-storydata b{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.nanatruck-with{
+  width: 150px;
+  padding: 22px 14px;
+  border-left: 1px solid var(--nanatruckbr);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  box-sizing: border-box;
+}
+
+.nanatruck-with span{
+  color: var(--nanatrucktxt);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 8px;
+  line-height: 10px;
+  letter-spacing: 0.5px;
+}
+
+.nanatruck-with b{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  font-size: 8px;
+  line-height: 10px;
+  font-weight: 400;
+}
+
+.nanatruck-characterfile{
+  width: 150px;
+  color: var(--nanatrucktxt);
+  padding: 20px 14px;
+  border-left: 1px solid var(--nanatruckbr);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  box-sizing: border-box;
+  transition: background 0.3s ease;
+}
+
+.nanatruck-characterfile span{
+  color: var(--nanatrucktxt2);
+  font-size: 7px;
+  line-height: 9px;
+  letter-spacing: 1px;
+}
+
+.nanatruck-characterfile b{
+  color: var(--nanatruckac1);
+  font-size: 8px;
+  line-height: 11px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.nanatruck-characterfile i{
+  margin-left: 4px;
+  font-size: 11px;
+  line-height: 11px;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.nanatruck-characterfile:hover{
+  background: var(--nanatruckbg2);
+}
+
+.nanatruck-characterfile:hover b{
+  color: var(--nanatrucktxt);
+}
+
+.nanatruck-characterfile:hover i{
+  transform: translate(2px, -2px);
+}
+
+.nanatruck-link{
+  width: 59px;
+  color: var(--nanatruckac1);
+  border-left: 1px solid var(--nanatruckbr);
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  text-decoration: none;
+  font-size: 19px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 0.3s ease, background 0.3s ease;
+}
+
+.nanatruck-link:hover{
+  background: var(--nanatruckac1);
+  color: var(--nanatruckbg);
+}
+
+.nanatruck-footer{
+  width: 688px;
+  height: 62px;
+  padding: 18px 22px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 18px;
+  box-sizing: border-box;
+}
+
+.nanatruck-footerlines{
+  width: 110px;
+  height: 18px;
+  background: repeating-linear-gradient(
+    -45deg,
+    var(--nanatruckac1) 0,
+    var(--nanatruckac1) 2px,
+    transparent 2px,
+    transparent 6px
+  );
+}
+
+.nanatruck-footer span,
+.nanatruck-footer b{
+  color: var(--nanatruckac1);
+  font-family: "Roboto Mono", monospace;
+  text-transform: uppercase;
+  font-size: 7px;
+  line-height: 9px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.nanatruck-footer b{
+  margin-left: auto;
+}
+
+.nanatruck-footerbars{
+  width: 85px;
+  height: 15px;
+  background: repeating-linear-gradient(
+    to right,
+    var(--nanatruckac1) 0,
+    var(--nanatruckac1) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+  opacity: 0.5;
+}
