@@ -1,3 +1,5 @@
+body {background:#000}
+
 :root{
   --nanachafileac1:#BFC0EA;
   --nanachafilebg:#080b0a;
@@ -87,13 +89,13 @@
 }
 
 .nanachafile-data{
-  margin-top:20px;
+  margin-top:15px;
 }
 
 .nanachafile-data div{
   display:flex;
   align-items:center;
-  margin-bottom:7px;
+  margin-bottom:3px;
 }
 
 .nanachafile-data span{
