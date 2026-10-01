@@ -1,0 +1,294 @@
+:root{
+  --nanachafileac1:#BFC0EA;
+  --nanachafilebg:#080b0a;
+  --nanachafiletxt:#d9dfdd;
+  --nanachafiledim:#71807c;
+  --nanachafilebr: color-mix(in srgb, var(--nanachafileac1) 20%, var(--nanachafilebg));
+}
+
+.nanachafile{
+  width:630px;
+  margin:30px auto;
+  background:var(--nanachafilebg);
+  border:1px solid var(--nanachafilebr);
+  color:var(--nanachafiletxt);
+  font-family:"Roboto Mono",monospace;
+  overflow:hidden;
+}
+
+.nanachafile a{
+  text-decoration:none;
+}
+
+.nanachafile-access{
+  height:45px;
+  padding:0 18px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid var(--nanachafilebr);
+  color:var(--nanachafileac1);
+  font-size:8px;
+  letter-spacing:2px;
+}
+
+.nanachafile-access b{
+  color:var(--nanachafileac1);
+  font-size:10px;
+  letter-spacing:4px;
+}
+
+.nanachafile-head{
+  display:flex;
+  padding:20px;
+  gap:24px;
+}
+
+.nanachafile-image{
+  width:220px;
+  height:270px;
+  flex-shrink:0;
+  border:1px solid var(--nanachafileac1);
+  overflow:hidden;
+}
+
+.nanachafile-image img{
+  width:220px;
+  height:270px;
+  display:block;
+  object-fit:cover;
+  filter:grayscale(85%) contrast(115%) brightness(60%) sepia(10%);
+}
+
+.nanachafile-info{
+  width:344px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+}
+
+.nanachafile-name{
+  color:var(--nanachafileac1);
+  font-family:"Barlow Condensed",sans-serif;
+  font-size:42px;
+  line-height:0.85;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.nanachafile-label{
+  width:max-content;
+  margin-top:14px;
+  padding:5px 10px;
+  border:1px solid var(--nanachafileac1);
+  color:var(--nanachafileac1);
+  font-size:9px;
+  letter-spacing:2px;
+}
+
+.nanachafile-data{
+  margin-top:20px;
+}
+
+.nanachafile-data div{
+  display:flex;
+  align-items:center;
+  margin-bottom:7px;
+}
+
+.nanachafile-data span{
+  width:110px;
+  flex-shrink:0;
+  color:var(--nanachafileac1);
+  font-size:9px;
+  letter-spacing:1.5px;
+}
+
+.nanachafile-data b{
+  color:var(--nanachafiletxt);
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.nanachafile-story{
+  min-height:48px;
+  display:flex;
+  border-top:1px solid var(--nanachafilebr);
+}
+
+.nanachafile-story div,
+.nanachafile-story a{
+  width:50%;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:var(--nanachafiletxt);
+  font-size:9px;
+  letter-spacing:1px;
+}
+
+.nanachafile-story a{
+  border-left:1px solid var(--nanachafilebr);
+  transition:background 0.3s ease;
+}
+
+.nanachafile-story span{
+  color:var(--nanachafiledim);
+}
+
+.nanachafile-story b{
+  color:var(--nanachafileac1);
+  font-weight:600;
+}
+
+.nanachafile-story i{
+  margin-left:auto;
+  color:var(--nanachafileac1);
+  font-style:normal;
+  font-size:14px;
+}
+
+.nanachafile-story a:hover{
+  background:rgba(255,255,255,0.03);
+}
+
+.nanachafile-section{
+  border-top:1px solid var(--nanachafilebr);
+}
+
+.nanachafile-sectiontitle{
+  min-height:52px;
+  padding:0 20px;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  border-bottom:1px solid var(--nanachafilebr);
+}
+
+.nanachafile-sectiontitle span{
+  color:var(--nanachafileac1);
+  font-family:"Barlow Condensed",sans-serif;
+  font-size:24px;
+  line-height:1;
+  font-weight:700;
+  text-transform:uppercase;
+}
+
+.nanachafile-sectiontitle i{
+  height:1px;
+  flex:1;
+  background:var(--nanachafilebr);
+}
+
+.nanachafile-sectiontitle b{
+  color:var(--nanachafileac1);
+  font-size:8px;
+  font-weight:500;
+  letter-spacing:2px;
+}
+
+.nanachafile-moodboard{
+  width:490px;
+  margin:20px auto;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.nanachafile-moodboard img{
+  width:150px;
+  height:150px;
+  object-fit:cover;
+  border:1px solid var(--nanachafileac1);
+  filter:grayscale(85%) contrast(115%) brightness(60%) sepia(10%);
+}
+
+.nanachafile-chapterlist a{
+  min-height:36px;
+  display:flex;
+  align-items:center;
+  border-bottom:1px solid var(--nanachafilebr);
+  color:var(--nanachafiletxt);
+  transition:background 0.3s ease;
+}
+
+.nanachafile-chapterlist a:last-child{
+  border-bottom:0;
+}
+
+.nanachafile-chapterlist span{
+  width:70px;
+  min-height:36px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-right:1px solid var(--nanachafilebr);
+  color:var(--nanachafileac1);
+  font-size:9px;
+  letter-spacing:1px;
+}
+
+.nanachafile-chapterlist b{
+  padding:0 16px;
+  flex:1;
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+}
+
+.nanachafile-chapterlist i{
+  width:45px;
+  flex-shrink:0;
+  color:var(--nanachafileac1);
+  font-style:normal;
+  font-size:15px;
+  text-align:center;
+}
+
+.nanachafile-chapterlist a:hover{
+  background:rgba(255,255,255,0.03);
+}
+
+.nanachafile-footer{
+  height:62px;
+  padding:0 16px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  border-top:1px solid var(--nanachafilebr);
+}
+
+.nanachafile-footerlines{
+  width:110px;
+  height:18px;
+  flex-shrink:0;
+  background:repeating-linear-gradient(135deg,var(--nanachafileac1) 0,var(--nanachafileac1) 2px,transparent 2px,transparent 6px);
+}
+
+.nanachafile-footer span{
+  color:var(--nanachafileac1);
+  font-size:7px;
+  letter-spacing:1.5px;
+  white-space:nowrap;
+}
+
+.nanachafile-footer b{
+  margin-left:auto;
+  color:var(--nanachafileac1);
+  font-size:7px;
+  font-weight:500;
+  letter-spacing:2px;
+  white-space:nowrap;
+}
+
+.nanachafile-footerbars{
+  width:86px;
+  height:15px;
+  flex-shrink:0;
+  background:repeating-linear-gradient(90deg,var(--nanachafileac1) 0,var(--nanachafileac1) 1px,transparent 1px,transparent 3px);
+}
