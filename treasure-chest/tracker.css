@@ -1,5 +1,5 @@
 :root {
-  --nanatruckac1: #bfc0ea;
+  --nanatruckac1: #92B6CF;
   --nanatruckbg: #080A09;
   --nanatruckbg2: #101312;
   --nanatruckbr: color-mix(in srgb, var(--nanatruckac1) 20%, var(--nanatruckbg));
