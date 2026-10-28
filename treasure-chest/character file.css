@@ -294,3 +294,11 @@ body {background:#000}
   flex-shrink:0;
   background:repeating-linear-gradient(90deg,var(--nanachafileac1) 0,var(--nanachafileac1) 1px,transparent 1px,transparent 3px);
 }
+
+.nanachafile-graphiclist{padding:20px;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;} 
+
+.nanachafile-graphiclist a{width:80px;height:80px;display:block;flex:0 0 80px;border:1px solid var(--nanachafileac1);overflow:hidden;} 
+
+.nanachafile-graphiclist img{width:80px !important;height:80px !important;display:block;object-fit:cover;filter:grayscale(85%) contrast(115%) brightness(60%) sepia(10%);transition:filter 0.3s ease;} 
+
+.nanachafile-graphiclist a:hover img{filter:grayscale(0%) contrast(100%) brightness(100%);}
